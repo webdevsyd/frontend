@@ -17,7 +17,7 @@ render(Root);
 
 if (module.hot) {
   module.hot.accept('./config/Root', () => {
-    const newApp = require('./config/Root').default;
+    const newApp = Root;
     render(newApp);
   });
 }
